@@ -1,13 +1,11 @@
 body{
   font-family: 'Noto Sans Armenian', sans-serif;
   overflow-x: hidden;
-  background-attachment: fixed;
 }
 h1,h2 {
   text-transform: capitalize;
   line-height: normal;
 }
-:root { background-attachment: fixed; }
 
 h1.w3-jumbo {
   font-size: calc(2.5rem + 2vw) !important;
@@ -15,13 +13,19 @@ h1.w3-jumbo {
 body, html {height: 100%; scroll-behavior: smooth;}
 
 .bgimg {
-  background-image: url("../images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg");  
-  background-size: 100%;
   filter: grayscale(30%) !important;
-
-  background-attachment: fixed;
-
 }
+.bgimg::before {
+    background-image: url("../images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
 .bgimg, .bgimg2 {
   min-height: 100%;
   background-position: center;
