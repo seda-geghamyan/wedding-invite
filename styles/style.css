@@ -1,11 +1,13 @@
 body{
   font-family: 'Noto Sans Armenian', sans-serif;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
 h1,h2 {
   text-transform: capitalize;
   line-height: normal;
 }
+:root { background-attachment: fixed; }
 
 h1.w3-jumbo {
   font-size: calc(2.5rem + 2vw) !important;
