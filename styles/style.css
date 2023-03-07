@@ -13,19 +13,16 @@ h1.w3-jumbo {
 body, html {height: 100%; scroll-behavior: smooth;}
 
 .bgimg {
-  filter: grayscale(30%) !important;
-}
-.bgimg::before {
+    filter: grayscale(30%) !important;
     background-image: url("../images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    content: "";
-    position: fixed;
-    height: 100%;
-    width: 100%;
+}
+@media (min-width: 601px) {
+    .bgimg {
     background-attachment: fixed;
-  }
-
+}
+}
 .bgimg, .bgimg2 {
   min-height: 100%;
   background-position: center;
