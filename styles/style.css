@@ -1,0 +1,124 @@
+body{
+  font-family: 'Noto Sans Armenian', sans-serif;
+  overflow-x: hidden;
+}
+h1,h2 {
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+h1.w3-jumbo {
+  font-size: calc(2.5rem + 2vw) !important;
+}
+body, html {height: 100%; scroll-behavior: smooth;}
+
+.bgimg {
+  background-image: url("../images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg");  
+  background-size: 100%;
+  filter: grayscale(30%) !important;
+
+  background-attachment: fixed;
+
+}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {height: 400px;}
+.w3-display-middle {
+  background-image: linear-gradient(90deg, #c4b7c3b3, transparent);
+        padding: 20px;
+        border-radius: 21px;
+      }
+.bgimg .w3-display-middle {
+  text-align: left !important;
+
+}
+.bgimg .w3-display-middle h1 {
+  font-weight: bold;
+
+}
+.bgimg2 {
+  filter: grayscale(40%) !important;
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+    background-position-y: center;
+    background-size: calc(45em + 51vh);
+    background-repeat-y: no-repeat;
+    min-height: calc(20em + 51vh);
+}
+.w3-greyscale-min, .w3-grayscale-min {
+    filter: grayscale(0%);
+}
+img {
+  filter: grayscale(50%) !important;
+}
+.w3-container.f {
+  filter: drop-shadow(0px 0px 0px black);
+}
+.w3-pale-red, .w3-hover-pale-red:hover {
+    background-color: #5769520f!important;
+}
+.w3-vik-bg {
+  background-image: url("../images/photo_2023-03-04_20-14-38.jpg");
+  background-position: center;
+  background-position: center 59%;
+    background-size: 220%;
+  filter: grayscale(32%);
+
+}
+.w3-padding-16 {
+  padding-bottom: 75px !important;
+}
+.w3-half p {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.w3-half {
+  margin-bottom: 90px;
+}
+.w3-half h2 {
+  margin-bottom: 24px;
+}
+@media (min-width: 601px) {
+.w3-half {
+  width: 100%;
+}
+}
+@media (min-width: 801px) {
+.w3-half {
+  width: 50%;
+  margin-bottom: 0px;
+}
+}
+a:hover {
+  color: #b46720;
+}
+.p-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.description {
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 36px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 1.5px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+}
