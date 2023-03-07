@@ -45,11 +45,15 @@ body, html {height: 100%; scroll-behavior: smooth;}
 .bgimg2 {
   filter: grayscale(40%) !important;
   background-image: url("../images/bg.jpg");
-  background-attachment: fixed;
     background-position-y: center;
     background-size: calc(45em + 51vh);
     background-repeat-y: no-repeat;
     min-height: calc(20em + 51vh);
+}
+@media (min-width: 601px) {
+    .bgimg2 {
+    background-attachment: fixed;
+}
 }
 .w3-greyscale-min, .w3-grayscale-min {
     filter: grayscale(0%);
